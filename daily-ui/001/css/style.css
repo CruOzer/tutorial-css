@@ -1,0 +1,96 @@
+body {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	text-align: left;
+}
+
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center{
+    text-align: center
+}
+
+.form-group{
+    display: block;
+    position: relative;
+    margin: 1.5rem auto .2rem auto;
+}
+.form-group .form-control{
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    line-height: 1.5;
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0.15rem;
+}
+.form-group .form-control:focus{
+border-color: aqua;
+}
+
+.form-group .form-control:invalid{
+    border: none;
+    border-bottom: 1px solid red;
+    border-radius: 0.15rem;
+}
+
+.form-group label{
+    pointer-events: none;
+    width: 100;
+    position: absolute;
+    padding: 0 .2rem;
+    color: grey;
+    left: 0;
+    top:0;
+    transition: all .1s ease-in-out
+}
+
+.form-group .form-control:focus + label{
+    transform: translateY(-1.3rem) scale(0.9);
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+}
+.card-body{
+    padding: 1.25rem;
+    flex:1 1 auto;
+}
+.card-header {
+	padding: .75rem 1.25rem;
+	margin-bottom: 0;
+	background-color: rgba(0,0,0,.03);
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    margin: 0;
+}
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	vertical-align: middle;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+    border-radius: .25rem;
+}
+.btn-primary {
+	color: #fff;
+	background-color: #007bff;
+	border-color: #007bff;
+}
