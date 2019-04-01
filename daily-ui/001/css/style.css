@@ -3,14 +3,35 @@ body {
 	font-size: 1rem;
 	font-weight: 400;
 	line-height: 1.5;
-	color: #212529;
-	text-align: left;
+	color: #fff;
+    text-align: left;
+    padding: 0;
+    margin: 0;
 }
 
+.main-container{
+
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-content: center;
+}
 .container{
+    max-height: 100%;
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+}
+.container h1{
+    text-align: center;
 }
 .text-center{
     text-align: center
@@ -22,16 +43,15 @@ body {
     margin: 1.5rem auto .2rem auto;
 }
 .form-group .form-control{
+    background-color: transparent;
+    color: white;
     width: 100%;
     outline: none;
     box-shadow: none;
     line-height: 1.5;
     border: none;
-    border-bottom: 1px solid #ced4da;
+    border-bottom: 1px solid white;
     border-radius: 0.15rem;
-}
-.form-group .form-control:focus{
-border-color: aqua;
 }
 
 .form-group .form-control:invalid{
@@ -45,7 +65,7 @@ border-color: aqua;
     width: 100;
     position: absolute;
     padding: 0 .2rem;
-    color: grey;
+    color: white;
     left: 0;
     top:0;
     transition: all .1s ease-in-out
@@ -61,10 +81,11 @@ border-color: aqua;
 	flex-direction: column;
 	min-width: 0;
 	word-wrap: break-word;
-	background-color: #fff;
+    /* background-color: transparent; */
+    background-color: rgba(0,0,0,0.1);
 	background-clip: border-box;
-	border: 1px solid rgba(0,0,0,.125);
-	border-radius: .25rem;
+	/* border: 3px solid #fff; */
+	border-radius: 1.25rem;
 }
 .card-body{
     padding: 1.25rem;
@@ -73,8 +94,10 @@ border-color: aqua;
 .card-header {
 	padding: .75rem 1.25rem;
 	margin-bottom: 0;
-	background-color: rgba(0,0,0,.03);
-    border-bottom: 1px solid rgba(0,0,0,.125);
+	background-color: rgba(0,0,0,0.2);
+    /* border-bottom: 1px solid white; */
+    border-top-right-radius: 1.25rem;
+    border-top-left-radius: 1.25rem;
     margin: 0;
 }
 .btn {
@@ -87,10 +110,19 @@ border-color: aqua;
 	padding: .375rem .75rem;
 	font-size: 1rem;
 	line-height: 1.5;
-    border-radius: .25rem;
+    border-radius: 1.25rem;
+    margin-top: 1rem;
 }
 .btn-primary {
 	color: #fff;
-	background-color: #007bff;
-	border-color: #007bff;
+	border-color: white;;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: rgb(63,94,251);
+    color: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%); 
+   
+background-color: white;
+border-color: white;
 }
