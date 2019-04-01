@@ -1,0 +1,153 @@
+html, body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: #182535;
+}
+    header nav ul {
+    list-style: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header nav ul li{
+    display: inline-block;
+    padding-left: 0.3rem;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+header nav .logo img{
+    height: 75px;
+}
+
+a{
+    text-decoration: none;
+    color: #353c46;
+}
+a:hover, a:focus{
+    color:black
+}
+
+.btn{
+    padding: 0.5rem;
+        border: 1px solid rgba(24, 37, 53, 0.1);
+        border-radius: 4px;
+}
+.btn-primary{
+    background-color: #7f64df;
+    color: white;
+}
+
+.btn-secondary{
+    border-color: #7f64df;
+    color: #7f64df;
+}
+.btn-primary:hover,.btn-primary:focus{
+    color: white;
+}
+
+
+.welcome{
+    margin-left:auto;
+    margin-right:auto;
+    width: 70%;
+    text-align: center;
+}
+.welcome h1{
+    font-weight: 400;
+}
+
+.welcome{
+    margin-bottom: 3rem;
+}
+.container{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    border-top: 2px solid rgba(0,0,0,0.125) ;
+    padding-top: 2rem;
+    margin: 2rem auto 2rem auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.card > .content-left,
+.card > .content-right
+{
+    flex:1;
+    text-align: left;
+    padding: 1rem;
+}
+
+
+.card .content-left img{
+    /* max-width: calc(100% - 80px); */
+    max-width: 100%; 
+    
+}
+
+.card .content-right h2{
+font-weight: 400;
+}
+
+.card .content-right p{
+    color: #566272;
+    font-weight: 400;
+    }
+
+
+    .btn-floating{
+        position: fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        border-radius:50px;
+        text-align:center;
+        box-shadow: 2px 2px 3px #999;
+        cursor: pointer;
+    }
+    footer {
+        border-top: 2px solid rgba(0,0,0,0.125) ;
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer ul{
+        list-style: none;
+    }
+    
+    footer ul li{
+        display: inline-block;
+        padding-left: 0.25rem;
+    }
+    footer .copyright h2{
+        font-size: 1rem;
+        font-weight: 300;
+        margin: 0;
+    }
+    footer .copyright p{
+        margin: 0;
+        font-size: 0.75rem;
+        font-weight: 300;
+    }
+
+
+    
+@media screen and (max-width: 768px)
+{
+    .card{
+        flex-direction: column;
+    }
+    footer {
+     flex-direction: column;
+    }
+}
