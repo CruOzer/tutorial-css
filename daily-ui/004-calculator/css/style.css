@@ -1,0 +1,104 @@
+body {
+  background-color: black;
+  color: #fff;
+}
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.text-center {
+  text-align: center;
+}
+
+.calculator {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 100px));
+  grid-template-rows: 50px repeat(4, minmax(100px, 100px));
+  grid-gap: 1px;
+  width: 403px;
+  grid-template-areas:
+    "calc-text calc-text calc-text calc-text"
+    "calc-7 calc-8 calc-9 calc-di"
+    "calc-4 calc-5 calc-6 calc-mu"
+    "calc-1 calc-2 calc-3 calc-mi"
+    "calc-0 calc-sep calc-eq calc-pl";
+  background-color: white;
+}
+.calc-text{
+    outline: none;
+    font-weight: 400;
+    font-size: 2rem;
+}
+.calc-btn {
+  height: 100px;
+  width: 100px;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.calc-btn:focus,
+.calc-btn:hover {
+  box-shadow: none;
+  border: none;
+
+  background-color: grey;
+  color: white;
+}
+.calc-text {
+  grid-area: calc-text;
+}
+.calc-7 {
+  grid-area: calc-7;
+}
+.calc-8 {
+  grid-area: calc-8;
+}
+.calc-9 {
+  grid-area: calc-9;
+}
+.calc-1 {
+  grid-area: calc-1;
+}
+.calc-2 {
+  grid-area: calc-2;
+}
+.calc-3 {
+  grid-area: calc-3;
+}
+.calc-4 {
+  grid-area: calc-4;
+}
+.calc-5 {
+  grid-area: calc-5;
+}
+.calc-6 {
+  grid-area: calc-6;
+}
+.calc-mi {
+  grid-area: calc-mi;
+}
+.calc-0 {
+  grid-area: calc-0;
+}
+.calc-eq {
+  grid-area: calc-eq;
+}
+
+.calc-pl {
+  grid-area: calc-pl;
+}
+.calc-sep {
+  grid-area: calc-sep;
+}
+.calc-di {
+  grid-area: calc-di;
+}
+.calc-mu {
+  grid-area: calc-mu;
+}
